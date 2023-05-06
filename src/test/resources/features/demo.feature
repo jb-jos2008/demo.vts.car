@@ -29,5 +29,23 @@ Feature: Search a Car
     And Customer click search button
     Then Customer will see search car are showing
     
+     @tag1
+  Scenario: Find Used Car
+    Given Customer open car.com application
+    When Customer select car type
+    And Customer select car make
+    And Customer select car model
+    And Customer click search button
+    Then Customer will see search car are showing
+    
+    @tag1
+  Scenario: Find Used&New Car
+    Given Customer open car.com application
+    When Customer select car type
+    And Customer select car make
+    And Customer select car model
+    And Customer click search button
+    Then Customer will see search car are showing
+    
 
  
